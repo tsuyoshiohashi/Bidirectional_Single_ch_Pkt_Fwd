@@ -4,11 +4,11 @@ Bidirectional Single Channel Gateway for RaspberryPi
 Added feature : downstream messages from server.
 Tested only Dragino GPS HAT (SX1276), NOT tested SX1272.
 
-How to use:
-Step1: sudo apt-get install wiringpi
-Step2: UPDATE config.h according to your environment.
-Step3: make
-Step4: sudo ./bidirection  
+How to use:  
+Step1: sudo apt-get install wiringpi  
+Step2: UPDATE config.h according to your environment.  
+Step3: make  
+Step4: sudo ./bidirection    
 
 It is adapted for TTN (http://thethingsnetwork.org).
 This implementation is for personal experiments.

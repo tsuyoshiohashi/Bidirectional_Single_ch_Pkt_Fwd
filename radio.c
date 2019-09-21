@@ -409,7 +409,7 @@ int rf_receivepacket(void) {
 void transmitPkt(buf_t* tbuf){
     uint8_t i;
 
-    assert( readRegister(REG_OPMODE) == SX72_MODE_RX_CONTINUOS);
+    //assert( readRegister(REG_OPMODE) == SX72_MODE_RX_CONTINUOS);
     // Stop Rx, enter standby mode (required for FIFO loading))
     //writeRegister(REG_OPMODE, SX72_MODE_STDBY);
 
