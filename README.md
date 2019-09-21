@@ -13,7 +13,8 @@ Step4: sudo ./bidirection
 It is adapted for TTN (http://thethingsnetwork.org).
 This implementation is for personal experiments.
 
-License:The source files in this repository are made available under the EclipsePublic License v1.0, except for the base64 implementation, that has been copied from the Semtech Packet Forwader, the parson implementation,that been copied from http://kgabis.github.com/parson/
+License:The source files in this repository are made available under the EclipsePublic License v1.0, except for the base64 implementation, that has been copied from the Semtech Packet Forwader, the parson implementation,that been copied from http://kgabis.github.com/parson/  
+This repository is forked from Single Channel Lora WAN Gateway https://github.com/tftelkamp/single_chan_pkt_fwd   
 
 ====================================================
 
