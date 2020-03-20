@@ -313,7 +313,11 @@ int rf_receivepacket(void) {
             }else{
                 show_time2( "Packet RSSI: ", rssi );
             }
-
+            // Check Proprietary and return 1
+            if(message[0] >= 0xe0){
+                show_timeh( "PROPRIETARY FRAME, MHDR:", message[0] );
+                return(1);
+            }
             j = bin_to_b64((uint8_t *)message, receivedbytes, (char *)(b64), 341); 
 
             buff_index = HEADER_SND_LEN; /* 12-byte header */
