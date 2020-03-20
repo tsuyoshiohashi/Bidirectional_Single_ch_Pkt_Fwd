@@ -200,6 +200,12 @@ int main(void){
                     show_time("start RX1 timer");
                     timerfd_settime( tfd_rx1, 0, &rx1time, NULL );
                 }
+            }else if (rxb_len == 1){
+                show_time("rx PROPRIETARY radio packet, Tx if data.");
+                if(isempty_que(txq) == 0){      // data to be transmitted
+                    show_time("Data exists,start RX1 timer");
+                    timerfd_settime( tfd_rx1, 0, &rx1time, NULL );
+                }
             }
         }   
         //// check timer RX1 ////
